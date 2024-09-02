@@ -31,3 +31,10 @@ Git: update my repository on github:
         git remote add origin https://github.com/huystrauss/TheTruth_proj.git
         git branch -M main
         git push -u origin main
+
+    …or update the code to repository
+        git add .
+        git commit -m "Changed Things"
+        git branch -M main
+        git remote add origin https://github.com/huystrauss/TheTruth_proj.git
+        git push -u origin main
