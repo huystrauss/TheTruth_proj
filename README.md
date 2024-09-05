@@ -14,6 +14,10 @@ Host Account:
     Billing: Free
     Status: Active
 
+Team Mail:
+    Email: teachingsofjesus780@outlook.com
+    Password: NguyenYan10
+
 Domain:
     https://learningthetruth.elementfx.com
 
