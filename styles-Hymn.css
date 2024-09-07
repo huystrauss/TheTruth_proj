@@ -1,0 +1,24 @@
+:root{
+    --gold-color: #E5B80B;
+    --silver-color: #BCC6CC;
+    --black-silver-color: #737474;
+    --blue-sky-color: #74C0FC;
+    --blood-color: #8A0303;
+    --green-color: #72BF6A;
+    --snow-white-color: #F5F4EF;
+    --dark-cream-color: #CCC7B3;
+    --dark-blue-color: #00008B;
+    --header-top: 97px;
+    --header-top-res-900px: 80px;
+    --header-top-res-600px: 68px;
+    /* --header-top-res-900px: 97px;
+    --header-top-res-600px: 97px; */
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--snow-white-color);
+}
