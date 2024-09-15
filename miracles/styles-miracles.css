@@ -391,9 +391,13 @@ footer{
         box-shadow: var(--silver-color) 8px 8px;
     }
     
+    main ul{
+        display: block;
+    }
+    
     main ul li{
-        width: 49%;
-        margin: 1% 1% 0;
+        width: 90%;
+        margin: 3% auto;
     }
     
     main ul li img{

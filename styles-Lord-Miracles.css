@@ -74,7 +74,7 @@ div.galery{
     border: 5px solid #CCC;
     border-radius: 10px;
     background-color: var(--green-color);
-    height: 335px;
+    height: 350px;
 }
 
 div.galery img{
