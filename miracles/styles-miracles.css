@@ -15,7 +15,7 @@ body, h1, h2, p{
     --dark-blue-color: #00008B;
     --header-top: 97px;
     --header-top-res-900px: 80px;
-    --header-top-res-600px: 68px;
+    --header-top-res-600px: 74px;
     /* --header-top-res-900px: 97px;
     --header-top-res-600px: 97px; */
 }
@@ -76,7 +76,6 @@ section.welcome p{
 nav{
     position: sticky;
     top: var(--header-top);
-    z-index: 1;
 }
 
 nav ul{
@@ -325,11 +324,11 @@ footer{
     /* header */
     header a{
         font-size: 30px;
-        width: 29%;
+        width: 35%;
     }
     
     header h1{
-        width: 73%;
+        width: 65%;
         font-size: 20px;
     }
 
@@ -434,9 +433,33 @@ footer{
 }
 
 @media only screen and (max-width: 400px){
+    /* header */
+    header a{
+        font-size: 30px;
+        width: 30%;
+    }
+    
+    header h1{
+        width: 70%;
+        font-size: 20px;
+    }
+
     /* Form */
     section.form-input input{
         width: 80%;
         border-radius: 8px;
+    }
+}
+
+@media only screen and (max-width: 300px){
+    /* header */
+    header a{
+        font-size: 30px;
+        width: 25%;
+    }
+    
+    header h1{
+        width: 75%;
+        font-size: 20px;
     }
 }
