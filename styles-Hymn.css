@@ -1,19 +1,24 @@
 :root{
     --gold-color: #E5B80B;
+    --dark-gold-color: #B59410;
+    --light-gold-color: #FDDC5C;
     --silver-color: #BCC6CC;
     --black-silver-color: #737474;
     --blue-sky-color: #74C0FC;
     --blood-color: #8A0303;
     --green-color: #72BF6A;
+    --dark-green-color: #006400;
+    --light-green-color: #90EE90;
     --snow-white-color: #F5F4EF;
     --dark-cream-color: #CCC7B3;
     --dark-blue-color: #00008B;
     --header-top: 97px;
-    --header-top-res-900px: 80px;
-    --header-top-res-600px: 68px;
+    --header-top-res-900px: 87px;
+    --header-top-res-600px: 74px;
     /* --header-top-res-900px: 97px;
     --header-top-res-600px: 97px; */
 }
+
 
 *{
     box-sizing: border-box;
@@ -21,4 +26,31 @@
 
 body{
     background-color: var(--snow-white-color);
+    background-image: linear-gradient(var(--gold-color), var(--blue-sky-color), var(--light-green-color));
+}
+
+button{
+    display: block;
+    margin: 20px auto;
+    background-color: var(--light-gold-color);
+    border-radius: 20px;
+    border: 3px solid var(--dark-gold-color);
+}
+
+button:hover{
+    background-color: var(--gold-color);
+    border: 5px solid var(--dark-gold-color);
+}
+
+button a{
+    display: block;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 700;
+    padding: 16px 20px;
+}
+
+button a:hover{
+    color: var(--dark-green-color);
 }
