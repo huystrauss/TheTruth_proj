@@ -171,6 +171,8 @@ main ul li img{
     max-width: 100%;
     border-radius: 20px;
     box-shadow: #8A0303 10px 10px;
+    display: block;
+    margin: auto;
 }
 
 /* Form */
@@ -283,7 +285,7 @@ footer{
         margin: 2% 2% 0;
     }
     
-    main ul li img{
+    main ul li img, main > img{
         border-radius: 15px;
         box-shadow: #8A0303 8px 8px;
     }
@@ -401,7 +403,7 @@ footer{
         margin: 3% auto;
     }
     
-    main ul li img{
+    main ul li img, main > img{
         border-radius: 10px;
         box-shadow: #8A0303 3px 3px;
     }
