@@ -91,7 +91,7 @@ div.galery img{
 div.galery:hover{
     border: 5px solid #777;
     /* Neon Box Shadow */
-    box-shadow: crimson 5px 5px;
+    box-shadow: crimson 5px 5px 5px;
 }
 
 div.galery a:hover{

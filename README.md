@@ -3,7 +3,7 @@ Host Server:
 
 Host Account:
     Account ID: 143196
-    Email Address: nguyenvanhuy178.hn@gmail.com 
+    Email Address: nguyenvanhuy178.hn@gmail.com
     Forum Account: huystrauss
     Server: X15
     User Name: xykmytha

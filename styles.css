@@ -166,8 +166,9 @@ main section.right-content article:hover{
     border-radius: 33px 0 33px 0;
 }
 
-main article img:hover{
+main article > a img:hover{
     opacity: 0.6;
+    box-shadow: 5px 0 5px var(--gold-color), 0 5px 5px var(--gold-color), -5px 0 5px var(--gold-color), 0 -5px 5px var(--gold-color);
 }
 
 main a{
