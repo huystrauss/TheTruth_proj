@@ -126,7 +126,7 @@ main article div.right-side img{
 }
 
 main article div.right-side.our-Lord img{
-    box-shadow: 8px 8px var(--blood-color);
+    box-shadow: 8px 8px 10px var(--blood-color);
 }
 
 main article div.left-side p{
