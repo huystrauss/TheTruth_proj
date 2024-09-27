@@ -213,6 +213,11 @@ footer{
 }
 
 @media only screen and (max-width: 1100px){
+    div.galery{
+        width: 30%;
+        margin: 30px 1.6667%;
+    }
+
     div.galery div.desc{
         font-size: 15px;
     }
@@ -242,7 +247,8 @@ footer{
 
     /* Galery */
     div.galery{
-        width: 48%;
+        width: 46%;
+        margin: 30px 2%;
     }
 
     div.galery div.desc{
@@ -319,9 +325,9 @@ footer{
     
     /* Galery */
     div.galery{
-        width: 96%;
-        margin-left: 2%;
-        margin-right: 2%;
+        width: 92%;
+        margin-left: 4%;
+        margin-right: 4%;
     }
 
     /* navigation */
