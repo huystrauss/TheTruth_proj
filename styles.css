@@ -193,6 +193,10 @@ main div.galery.miracle{
     background-color: var(--green-color);
 }
 
+main div.galery.teaching, main div.galery.miracle{
+    margin: 20px auto;
+}
+
 main div.galery img{
     margin-top: 0;
     width: 100%;
