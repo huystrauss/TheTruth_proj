@@ -50,6 +50,14 @@ header a{
     text-shadow: white 3px 3px;
 }
 
+header a i{
+    transition: transform 700ms;
+}
+
+header a:hover i{
+    transform: scale(1.5, 1.5);
+}
+
 header h1{
     width: 60%;
     color: var(--blood-color);
@@ -69,9 +77,23 @@ section.welcome img{
 section.welcome p{
     position: absolute;
     bottom: 15%;
-    padding: 20px;
-    color: white;
     background-color: var(--gold-color);
+    font-size: 0px;
+    color: white;
+    padding: 20px 20px 20px 50px;
+    border-radius: 0 10px 10px 0;
+    height: 35px;
+    background-image: url("../icons/arrow-right-solid.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80%;
+    transition: font-size 1s, border-radius 1s;
+    display: flex;
+    align-items: center;
+}
+
+section.welcome p:hover{
+    background-image: none;
     font-size: 30px;
     border-radius: 0 20px 20px 0;
 }
@@ -236,7 +258,13 @@ footer{
 
     /* welcome */
     section.welcome p{
-        padding: 10px;
+        height: 25px;
+        background-size: 60%;
+        padding: 10px 10px 10px 25px;
+        border-radius: 0 5px 5px 0;
+    }
+
+    section.welcome p:hover{
         font-size: 20px;
         border-radius: 0 10px 10px 0;
     }
@@ -341,7 +369,13 @@ footer{
 
     /* welcome */
     section.welcome p{
-        padding: 8px;
+        height: 35px;
+        padding: 8px 8px 8px 20px;
+        background-size: 60%;
+        border-radius: 0 4px 4px 0;
+    }
+
+    section.welcome p:hover{
         font-size: 15px;
         border-radius: 0 8px 8px 0;
     }

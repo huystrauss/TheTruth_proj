@@ -56,6 +56,14 @@ header a{
     text-shadow: white 3px 3px;
 }
 
+header a i{
+    transition: transform 700ms;
+}
+
+header a:hover i{
+    transform: scale(1.5, 1.5);
+}
+
 header h1{
     width: 60%;
     color: var(--blood-color);
@@ -81,6 +89,7 @@ div.galery{
     border-radius: 10px;
     background-color: var(--blue-sky-color);
     height: 350px;
+    transition: transform 2s 500ms;
 }
 
 div.galery img{
@@ -93,6 +102,8 @@ div.galery:hover{
     border: 5px solid var(--silver-color);
     /* Neon Box Shadow */
     box-shadow: crimson 5px 5px 5px;
+    transform: rotateY(360deg);
+    background-image: linear-gradient(to right, var(--green-color), var(--light-gold-color), var(--blue-sky-color));
 }
 
 div.galery a:hover{

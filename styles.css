@@ -52,6 +52,14 @@ header a{
     text-shadow: white 3px 3px;
 }
 
+header a i{
+    transition: transform 700ms;
+}
+
+header a:hover i{
+    transform: scale(1.5, 1.5);
+}
+
 header h1{
     width: 57%;
     color: var(--blood-color);
@@ -139,6 +147,7 @@ main article{
     margin-top: 10px;
     border-radius: 10px;
     background-color: var(--silver-color);
+    transition: border-radius 400ms;
 }
 
 main p{
@@ -153,7 +162,7 @@ main p.main-p-author{
 }
 
 main article:hover{
-    background-color: var(--black-silver-color);
+    background-image: linear-gradient(var(--green-color), var(--light-gold-color), var(--blue-sky-color));
     color: white;
     text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
 }
@@ -181,6 +190,7 @@ main div.galery{
     margin: 20px 0;
     border-radius: 10px;
     height: 335px;
+    transition: transform 2s 500ms;
 }
 
 main div.galery.teaching{
@@ -207,6 +217,7 @@ main div.galery img{
 main div.galery:hover{
     /* Neon Box Shadow */
     box-shadow: crimson 5px 5px;
+    transform: rotateY(360deg);
 }
 
 main div.galery.teaching:hover{
