@@ -6,6 +6,7 @@
     --black-silver-color: #737474;
     --blue-sky-color: #74C0FC;
     --blood-color: #8A0303;
+    --red-neon-color: #FF3131;
     --green-color: #72BF6A;
     --dark-green-color: #006400;
     --light-green-color: #90EE90;
@@ -41,6 +42,121 @@ header{
     padding: 20px 0;
     background-color: var(--blue-sky-color);
     border-radius: 10px 10px 0 0;
+
+    /* Animation for Header after loading the page */
+    animation-name: animation-header;
+    animation-delay: 500ms;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+}
+
+@keyframes animation-header{
+    0%{
+        position: relative;
+        width: 100%;
+        height: fit-content;
+        left: 0;
+        top: 0;
+        z-index: 2;
+    }
+
+    5%{
+        position: fixed;
+        width: 100%;
+        height: 150px;
+        z-index: 2;
+    }
+
+    10%{
+        position: fixed;
+        width: 100%;
+        height: 250px;
+        z-index: 2;
+    }
+
+    15%{
+        position: fixed;
+        width: 100%;
+        height: 300px;
+        z-index: 2;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    20%{
+        position: fixed;
+        width: 400px;
+        height: 400px;
+        z-index: 2;
+        left: 50%;
+        top: 50%;
+        border-radius: 30%; 
+        border: 10px solid var(--gold-color);
+        background-image: radial-gradient(var(--blue-sky-color) 0, var(--green-color) 60%, var(--red-neon-color) 80%);
+        transform: translate(-50%, -50%);
+    }
+
+    30%, 40%, 50%, 60%, 70%{
+        position: fixed;
+        width: 400px;
+        height: 400px;
+        z-index: 2;
+        left: 50%;
+        top: 50%;
+        border-radius: 50%; 
+        border: 10px solid var(--gold-color);
+        background-image: radial-gradient(var(--blue-sky-color) 0, var(--green-color) 60%, var(--red-neon-color) 80%);
+        transform: translate(-50%, -50%);
+    }
+
+    80%{
+        position: fixed;
+        width: 400px;
+        height: 400px;
+        z-index: 2;
+        left: 50%;
+        top: 50%;
+        border-radius: 30%; 
+        border: 10px solid var(--gold-color);
+        background-image: radial-gradient(var(--blue-sky-color) 0, var(--green-color) 60%, var(--red-neon-color) 80%);
+        transform: translate(-50%, -50%);
+    }
+
+    85%{
+        position: fixed;
+        width: 100%;
+        height: 300px;
+        z-index: 2;
+    }
+
+    90%{
+        position: fixed;
+        width: 100%;
+        height: 250px;
+        z-index: 2;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    95%{
+        position: fixed;
+        width: 100%;
+        height: 150px;
+        z-index: 2;
+    }
+
+    100%{
+        position: relative;
+        width: 100%;
+        height: fit-content;
+        left: 0;
+        top: 0;
+        z-index: 2;
+    }
 }
 
 header a{
@@ -328,6 +444,113 @@ footer{
 
 @media only screen and (max-width: 900px){
     /* header */
+    @keyframes animation-header{
+        0%{
+            position: relative;
+            width: 100%;
+            height: fit-content;
+            left: 0;
+            top: 0;
+            z-index: 2;
+        }
+    
+        5%{
+            position: fixed;
+            width: 100%;
+            height: 112.5px;
+            z-index: 2;
+        }
+    
+        10%{
+            position: fixed;
+            width: 100%;
+            height: 187.5px;
+            z-index: 2;
+        }
+    
+        15%{
+            position: fixed;
+            width: 100%;
+            height: 225px;
+            z-index: 2;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    
+        20%{
+            position: fixed;
+            width: 300px;
+            height: 300px;
+            z-index: 2;
+            left: 50%;
+            top: 50%;
+            border-radius: 30%; 
+            border: 10px solid var(--gold-color);
+            background-image: radial-gradient(var(--blue-sky-color) 0, var(--green-color) 60%, var(--red-neon-color) 80%);
+            transform: translate(-50%, -50%);
+        }
+    
+        30%, 40%, 50%, 60%, 70%{
+            position: fixed;
+            width: 300px;
+            height: 300px;
+            z-index: 2;
+            left: 50%;
+            top: 50%;
+            border-radius: 50%; 
+            border: 10px solid var(--gold-color);
+            background-image: radial-gradient(var(--blue-sky-color) 0, var(--green-color) 60%, var(--red-neon-color) 80%);
+            transform: translate(-50%, -50%);
+        }
+    
+        80%{
+            position: fixed;
+            width: 300px;
+            height: 300px;
+            z-index: 2;
+            left: 50%;
+            top: 50%;
+            border-radius: 30%; 
+            border: 10px solid var(--gold-color);
+            background-image: radial-gradient(var(--blue-sky-color) 0, var(--green-color) 60%, var(--red-neon-color) 80%);
+            transform: translate(-50%, -50%);
+        }
+    
+        85%{
+            position: fixed;
+            width: 100%;
+            height: 225px;
+            z-index: 2;
+        }
+    
+        90%{
+            position: fixed;
+            width: 100%;
+            height: 187.5px;
+            z-index: 2;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    
+        95%{
+            position: fixed;
+            width: 100%;
+            height: 112.5px;
+            z-index: 2;
+        }
+    
+        100%{
+            position: relative;
+            width: 100%;
+            height: fit-content;
+            left: 0;
+            top: 0;
+            z-index: 2;
+        }
+    }
+
     header a{
         font-size: 40px;
         width: 45%;
@@ -410,6 +633,113 @@ footer{
 
 @media only screen and (max-width: 600px){
     /* header */
+    @keyframes animation-header{
+        0%{
+            position: relative;
+            width: 100%;
+            height: fit-content;
+            left: 0;
+            top: 0;
+            z-index: 2;
+        }
+    
+        5%{
+            position: fixed;
+            width: 100%;
+            height: 75px;
+            z-index: 2;
+        }
+    
+        10%{
+            position: fixed;
+            width: 100%;
+            height: 125px;
+            z-index: 2;
+        }
+    
+        15%{
+            position: fixed;
+            width: 100%;
+            height: 150px;
+            z-index: 2;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    
+        20%{
+            position: fixed;
+            width: 200px;
+            height: 200px;
+            z-index: 2;
+            left: 50%;
+            top: 50%;
+            border-radius: 30%; 
+            border: 10px solid var(--gold-color);
+            background-image: radial-gradient(var(--blue-sky-color) 0, var(--green-color) 60%, var(--red-neon-color) 80%);
+            transform: translate(-50%, -50%);
+        }
+    
+        30%, 40%, 50%, 60%, 70%{
+            position: fixed;
+            width: 200px;
+            height: 200px;
+            z-index: 2;
+            left: 50%;
+            top: 50%;
+            border-radius: 50%; 
+            border: 10px solid var(--gold-color);
+            background-image: radial-gradient(var(--blue-sky-color) 0, var(--green-color) 60%, var(--red-neon-color) 80%);
+            transform: translate(-50%, -50%);
+        }
+    
+        80%{
+            position: fixed;
+            width: 200px;
+            height: 200px;
+            z-index: 2;
+            left: 50%;
+            top: 50%;
+            border-radius: 30%; 
+            border: 10px solid var(--gold-color);
+            background-image: radial-gradient(var(--blue-sky-color) 0, var(--green-color) 60%, var(--red-neon-color) 80%);
+            transform: translate(-50%, -50%);
+        }
+    
+        85%{
+            position: fixed;
+            width: 100%;
+            height: 150px;
+            z-index: 2;
+        }
+    
+        90%{
+            position: fixed;
+            width: 100%;
+            height: 125px;
+            z-index: 2;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    
+        95%{
+            position: fixed;
+            width: 100%;
+            height: 75px;
+            z-index: 2;
+        }
+    
+        100%{
+            position: relative;
+            width: 100%;
+            height: fit-content;
+            left: 0;
+            top: 0;
+            z-index: 2;
+        }
+    }
+
     header a{
         font-size: 30px;
         width: 40%;
