@@ -172,7 +172,7 @@ header a i{
     transition: transform 700ms;
 }
 
-header a:hover i{
+header a i:hover{
     transform: scale(1.5, 1.5);
 }
 
