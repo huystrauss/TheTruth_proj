@@ -241,6 +241,33 @@ footer{
     background-color: var(--gold-color);
 }
 
+audio{
+    display: block;
+    position: fixed;
+    right: 0;
+    bottom: 40%;
+    width: 100px;
+    opacity: 0.5;
+    height: 40px;
+}
+
+audio::-webkit-media-controls-timeline{
+    display: none;
+}
+
+audio::-webkit-media-controls-panel{
+    background-color: var(--gold-color);
+}
+
+audio:hover{
+    width: 150px;
+    opacity: 1;
+}
+
+audio::-webkit-media-controls-current-time-display, audio::-webkit-media-controls-time-remaining-display{
+    display: none;
+}
+
 @media screen and (max-width: 900px){
     body{
         margin-top: var(--header-top-res-900px);
