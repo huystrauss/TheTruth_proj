@@ -1,6 +1,9 @@
 Host Server: 
     https://x10hosting.com/login
 
+Host File Manager:
+    https://x15.x10hosting.com:2222/CMD_FILE_MANAGER
+
 Host Account:
     Account ID: 143196
     Email Address: nguyenvanhuy178.hn@gmail.com

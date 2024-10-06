@@ -339,10 +339,12 @@ main div.galery:hover{
 
 main div.galery.teaching:hover{
     border: 5px solid var(--silver-color);
+    background-image: linear-gradient(to right, var(--green-color), var(--light-gold-color), var(--blue-sky-color));
 }
 
 main div.galery.miracle:hover{
     border: 5px solid #777;
+    background-image: linear-gradient(to left, var(--green-color), var(--light-gold-color), var(--blue-sky-color));
 }
 
 main div.galery a:hover{
