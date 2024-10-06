@@ -13,6 +13,7 @@
     --snow-white-color: #F5F4EF;
     --dark-cream-color: #CCC7B3;
     --dark-blue-color: #00008B;
+    --light-black-color: #2C2D2D;
     --header-top: 97px;
     --header-top-res-900px: 87px;
     --header-top-res-600px: 74px;
@@ -426,6 +427,7 @@ audio{
     opacity: 0.5;
     height: 40px;
     margin-right: 10px;
+    z-index: 3;
 }
 
 audio::-webkit-media-controls-timeline{

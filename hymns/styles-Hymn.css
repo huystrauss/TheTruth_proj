@@ -13,6 +13,7 @@
     --snow-white-color: #F5F4EF;
     --dark-cream-color: #CCC7B3;
     --dark-blue-color: #00008B;
+    --light-black-color: #2C2D2D;
     --header-top: 97px;
     --header-top-res-900px: 87px;
     --header-top-res-600px: 74px;
@@ -117,17 +118,19 @@ main{
     border-radius: 10px;
     margin-top: 10px;
     padding: 20px;
+    display: flex;
 }
 
 main section.library{
-    float: left;
     width: 30%;
     border-right: 3px solid;
 }
 
 main section.hymns{
-    float: left;
     width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 main section.library h1, main section.hymns h1{
@@ -157,8 +160,7 @@ main section.library article.library-famous-hymns > a:hover, main section.librar
     border-radius: 7px;
 }
 
-/*  */
-
+/* main section.hymns */
 main section.hymns h1{
     color: var(--snow-white-color);
     font-size: 40px;
@@ -175,7 +177,6 @@ main section.hymns article.hymn-running{
 }
 
 main section.hymns article.hymn-running img{
-    float: left;
     width: 30%;
 }
 
@@ -200,17 +201,18 @@ main section.hymns article.hymn-running img{
 }
 
 main section.hymns article.hymn-running article.hymn-running-playing{
-    float: left;
     width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
 main section.hymns article.hymn-running article.hymn-running-playing button.button-playing{
     display: block;
-    float: left;
     width: 20%;
     height: 54px;
-    border-radius: 20px;
+    border-radius: 40px;
     margin: 0 0.5%;
     background-color: var(--snow-white-color);
     border: transparent;
@@ -223,7 +225,6 @@ main section.hymns article.hymn-running article.hymn-running-playing button.butt
 
 main section.hymns article.hymn-running article.hymn-running-playing audio{
     display: block;
-    float: left;
     width: 78%;
     display: block;
     margin: 0 0.5%;
@@ -235,6 +236,25 @@ audio::-webkit-media-controls-panel{
 
 audio::-webkit-media-controls-play-button{
     display: none;
+}
+
+/* main section.hymns */
+main section.hymns article.hymn-information{
+    padding-left: 20px;
+}
+
+main section.hymns article.hymn-information h2{
+    color: var(--light-black-color);
+    font-size: 20px;
+}
+
+main section.hymns article.hymn-information h2 span{
+    color: var(--snow-white-color);
+}
+
+main section.hymns article.hymn-information h2 span a{
+    text-decoration: none;
+    color: var(--snow-white-color);
 }
 
 main section.hymns article.hymn-running::after, main::after{
@@ -373,8 +393,7 @@ footer{
         font-size: 18px;
     }
     
-    /*  */
-    
+    /* main section.hymns */
     main section.hymns h1{
         font-size: 30px;
     }
@@ -412,9 +431,9 @@ footer{
     }
     
     main section.hymns article.hymn-running article.hymn-running-playing{
+        display: block;
         width: 100%;
     }
-    
     
     main section.hymns article.hymn-running article.hymn-running-playing button.button-playing{
         width: 100%;
@@ -423,6 +442,18 @@ footer{
     
     main section.hymns article.hymn-running article.hymn-running-playing audio{
         width: 100%;
+    }
+
+    /* main section.hymns */
+    main section.hymns article.hymn-information h2{
+        color: var(--light-black-color);
+        font-size: 18px;
+    }
+
+    main section.hymns article.hymn-running::after, main::after{
+        content: "";
+        display: table;
+        clear: both;
     }
 
     /* Form */
@@ -500,6 +531,7 @@ footer{
     /* main */
     main{
         border-radius: 10px;
+        display: block;
     }
     
     main section.library{
@@ -526,8 +558,7 @@ footer{
         font-size: 18px;
     }
     
-    /*  */
-    
+    /* main section.hymns */
     main section.hymns h1{
         font-size: 30px;
     }
@@ -542,6 +573,18 @@ footer{
     
     main section.hymns article.hymn-running img{
         width: 80%;
+    }
+
+    /* main section.hymns */
+    main section.hymns article.hymn-information h2{
+        color: var(--light-black-color);
+        font-size: 17px;
+    }
+
+    main section.hymns article.hymn-running::after, main::after{
+        content: "";
+        display: table;
+        clear: both;
     }
 
     /* Form */

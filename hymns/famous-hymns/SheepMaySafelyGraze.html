@@ -27,8 +27,7 @@
                     audio.pause();        
                 }
 
-                let aud = document.getElementById("audio");
-                aud.onended = function() {
+                audio.onended = function() {
                     check_play = 0;
                     button.innerHTML = "Play";
                     image.classList.toggle("image-animation-360deg");
@@ -62,15 +61,17 @@
                     <h2>1. Famous Hymn</h2>
                     <a href="SilentNight.html">Silent Night</a>
                     <a href="SheepMaySafelyGraze.html">Sheep May Safely Graze</a>
-                    <a href="TheSpiritOfGod.html">The Spirit Of God</a>
                     <a href="VeniVeniEmmanuel.html">Veni Veni Emmanuel</a>
+                    <a href="JesuJoyOfMansDesiring.html">Jesu, Joy Of Man's Desiring</a>
+                    <a href="YeSonsAndDaughters.html">Ye Sons And Daughters</a>      
                 </article>
                 <article class="library-our-composed-hymns">
                     <h2>2. Our Composed Hymn</h2>
                     <a href="SilentNight.html">Silent Night</a>
                     <a href="SheepMaySafelyGraze.html">Sheep May Safely Graze</a>
-                    <a href="TheSpiritOfGod.html">The Spirit Of God</a>
                     <a href="VeniVeniEmmanuel.html">Veni Veni Emmanuel</a>
+                    <a href="JesuJoyOfMansDesiring.html">Jesu, Joy Of Man's Desiring</a>
+                    <a href="YeSonsAndDaughters.html">Ye Sons And Daughters</a>
                 </article>
             </section>
             <section class="hymns">
@@ -86,7 +87,9 @@
                     </article>
                 </article>
                 <article class="hymn-information">
-                    <!-- hymn-information - In developing -->
+                    <h2>Composer: <span>Johann Sebastian Bach</span></h2>
+                    <h2>Singer / Orchestra / Band: <span>Ellen McAtee</span></h2>
+                    <h2>Source: <span><a href="https://www.youtube.com/watch?v=xt3DEuw0wjM">- Bach - Sheep May Safely Graze, from the Hunt Cantata, BWV 208 | Toronto Bach Festival -</a></span></h2>
                 </article>
             </section>
         </main>
