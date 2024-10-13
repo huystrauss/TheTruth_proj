@@ -121,6 +121,41 @@ main{
     display: flex;
 }
 
+main .title-tooltip{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+main .title-tooltip .title-tooltip-text{
+    position: absolute;
+    top: 100%;
+    left: 25%;
+    width: fit-content;
+    visibility: hidden;
+    padding: 10px;
+    text-align: left;
+    font-size: 15px;
+    border-radius: 20px;
+    background-image: linear-gradient(to right, var(--dark-cream-color), var(--silver-color), var(--blue-sky-color));
+    z-index: 1;
+}
+
+main .title-tooltip .title-tooltip-text::after{
+    content: " ";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -8px;
+    border-width: 8px;
+    border-style: solid;
+    border-color: transparent transparent var(--dark-cream-color) transparent;
+}
+
+main .title-tooltip:hover .title-tooltip-text{
+    visibility: visible;
+}
+
 main section.library{
     width: 30%;
     border-right: 3px solid;
