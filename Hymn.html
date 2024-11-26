@@ -23,7 +23,7 @@
                     audio.play();
                 } else {
                     check_play = 0;
-                    button.innerHTML = "Play";
+                    button.innerHTML = "Play &#187;";
                     audio.pause();        
                 }
 
@@ -80,7 +80,7 @@
                 <article class="hymn-running">
                     <img id="disk-animation" src="hymns/img/disk.png" alt="disk-image">
                     <article class="hymn-running-playing">
-                        <button type="button" class="button-playing" onclick="play()" id="button">Play</button>
+                        <button type="button" class="button-playing" onclick="play()" id="button"><span>Play</span></button>
                         <audio id="audio" controls controlsList="nodownload noplaybackrate">
                             <source src="audios/SilentNight.mp3" type="audio/mpeg">
                             Your browser does not support the audio element.

@@ -258,6 +258,27 @@ main section.hymns article.hymn-running article.hymn-running-playing button.butt
     background-color: var(--green-color);
 }
 
+main section.hymns article.hymn-running article.hymn-running-playing button.button-playing span{
+    position: relative;
+    transition: 0.5s;
+}
+
+main section.hymns article.hymn-running article.hymn-running-playing button.button-playing span::after{
+    position: absolute;
+    content: '\00bb';
+    opacity: 0;
+    transition: 0.5s;
+}
+
+main section.hymns article.hymn-running article.hymn-running-playing button.button-playing:hover span{
+    padding-right: 10%;
+}
+
+main section.hymns article.hymn-running article.hymn-running-playing button.button-playing:hover span::after{
+    opacity: 1;
+    padding-left: 10%;
+}
+
 main section.hymns article.hymn-running article.hymn-running-playing audio{
     display: block;
     width: 78%;
