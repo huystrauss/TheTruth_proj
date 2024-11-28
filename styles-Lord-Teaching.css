@@ -180,6 +180,34 @@ nav ul li a:hover{
     border-radius: 20px 0 20px 0;
 }
 
+/* Pagination */
+section.pagination{
+    text-align: center;
+}
+
+section.pagination section.pagination-element{
+    display: inline-block;
+}
+
+section.pagination section.pagination-element a{
+    float: left;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 8px 16px;
+    border-radius: 10px;
+    color: var(--blood-color);
+}
+
+section.pagination section.pagination-element a.active{
+    background-color: var(--red-neon-color);
+    color: white;
+}
+
+section.pagination section.pagination-element a:hover:not(a.active){
+    background-color: var(--blue-sky-color);
+}
+
 /* Form */
 section.form-input{
     padding: 20px;
@@ -262,6 +290,11 @@ audio::-webkit-media-controls-current-time-display, audio::-webkit-media-control
     div.galery div.desc{
         font-size: 15px;
     }
+
+    /* Pagination */
+    section.pagination section.pagination-element a{
+        font-size: 23px;
+    }
 }
 
 @media only screen and (max-width: 1000px){
@@ -317,6 +350,11 @@ audio::-webkit-media-controls-current-time-display, audio::-webkit-media-control
     
     nav ul li a:hover{
         border-radius: 15px 0 15px 0;
+    }
+
+    /* Pagination */
+    section.pagination section.pagination-element a{
+        font-size: 20px;
     }
 
     /* Form */
@@ -401,6 +439,11 @@ audio::-webkit-media-controls-current-time-display, audio::-webkit-media-control
     
     nav ul li a:hover{
         border-radius: 0;
+    }
+
+    /* Pagination */
+    section.pagination section.pagination-element a{
+        font-size: 16px;
     }
 
     /* Form */
