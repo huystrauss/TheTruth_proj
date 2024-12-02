@@ -70,6 +70,7 @@ header h1{
 /* Welcome */
 section.welcome{
     position: relative;
+    background-color: #3B4340;
 }
 
 section.welcome img{
@@ -426,12 +427,27 @@ audio::-webkit-media-controls-current-time-display, audio::-webkit-media-control
     }
 
     nav ul li{
-        float: none;
+        /* float: none; */
+        width: 50%;
         text-align: center;
+        border-bottom: 2px solid var(--green-color);
+    }
+
+    nav ul li a{
+        border-right: 2px solid var(--green-color);
+    }
+
+    nav ul li a[href="index.html"], nav ul li a[href="Lord-Teaching.html"], nav ul li a[href="about-us.html"]{
+        border-left: 2px solid var(--green-color);
+    }
+
+    nav ul li a[href="index.html"], nav ul li a[href="Lord-Miracles.html"]{
+        border-top: 2px solid var(--green-color);
     }
     
     nav ul li.right{
-        float: none;
+        /* float: none; */
+        width: 100%;
     }
     
     nav ul li a.active{
