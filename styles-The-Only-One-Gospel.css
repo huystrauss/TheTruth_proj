@@ -292,6 +292,17 @@ main section.warning-text p.warning-verse{
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+main section.warning-text p.accept{
+    background-color: var(--snow-white-color);
+    text-align: center;
+    font-size: 30px;
+    color: var(--blood-color);
+    font-weight: 600;
+    border-top: 3px solid var(--gold-color);
+    padding: 20px 10%;
+    background-color: var(--light-green-color);
+}
+
 main section.movie{
     text-align: center;
     margin: 50px 20px 20px;
@@ -359,8 +370,8 @@ footer{
 }
 
 ::selection{
-    color: var(--gold-color);
-    background-color: var(--snow-white-color);
+    color: var(--dark-gold-color);
+    background-color: var(--dark-cream-color);
 }
 
 audio{
@@ -563,6 +574,11 @@ audio::-webkit-media-controls-current-time-display, audio::-webkit-media-control
     main section.warning-text p.warning-verse{
         font-size: 18px;
         margin: 7px 5% 7px;
+    }
+
+    main section.warning-text p.accept{
+        font-size: 25px;
+        padding: 15px 7%;
     }
     
     main section.movie{
@@ -786,6 +802,11 @@ audio::-webkit-media-controls-current-time-display, audio::-webkit-media-control
     main section.warning-text p.warning-verse{
         font-size: 15px;
         margin: 5px 3% 5px;
+    }
+
+    main section.warning-text p.accept{
+        font-size: 20px;
+        padding: 10px 5%;
     }
     
     main section.movie{
