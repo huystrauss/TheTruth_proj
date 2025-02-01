@@ -11,6 +11,16 @@
         <meta charset="utf-8">
     </head>
     <body>
+        <script>
+            function show_passion_content(){
+                var display_type = document.getElementById("bible-passion").style.display;
+                if (display_type === "none" || display_type == "") {
+                    document.getElementById("bible-passion").style.display = "block";
+                } else {
+                    document.getElementById("bible-passion").style.display = "none";
+                }
+            }
+        </script>
         <header>
             <a href="index.html">
                 <i class="fa-solid fa-cross"></i>
@@ -80,9 +90,29 @@
                 </p>
             </section>
             
+            <button class="bible-passion-button" onclick="show_passion_content()">
+                <strong style="font-size: 1.2em;">CLICK</strong> to read The Passion Of The Christ
+            </button>
+            <section class="bible-passion" id="bible-passion">
+                <div class="galery">
+                    <a href="bible-passion/index-bible-passion-The-Plot-To-Kill-Lord-Jesus.html">
+                        <img src="img/The-Plot-To-Kill-Lord-Jesus.jpg" alt="The Plot To Kill Lord Jesus">
+                    </a>
+                    <div class="desc">The Plot To Kill Lord Jesus</div>
+                </div>
+                
+                
+                <div class="clearfix"></div>
+            </section>
+            
             <section class="movie">
                 <h2>Watching The Passion Of The Christ Movie</h2>
-                <iframe src="https://www.youtube.com/embed/1x8MRvpoAc8?si=oDMXepBg2KPzAktL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/1x8MRvpoAc8?si=oDMXepBg2KPzAktL" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" 
+                allowfullscreen></iframe>
             </section>
         </main>
 
