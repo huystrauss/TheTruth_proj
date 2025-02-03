@@ -13,9 +13,11 @@
     <body>
         <script>
             function show_passion_content(){
-                var display_type = document.getElementById("bible-passion").style.display;
+                let box_passion_bible = document.getElementById("bible-passion");
+                let display_type = document.getElementById("bible-passion").style.display;
                 if (display_type === "none" || display_type == "") {
                     document.getElementById("bible-passion").style.display = "block";
+                    document.getElementById("bible-passion").style.animation = "bible-passion-animation 1s linear";
                 } else {
                     document.getElementById("bible-passion").style.display = "none";
                 }
@@ -94,11 +96,18 @@
                 <strong style="font-size: 1.2em;">CLICK</strong> to read The Passion Of The Christ
             </button>
             <section class="bible-passion" id="bible-passion">
-                <div class="galery">
+                <div class="galery" id="galery">
                     <a href="bible-passion/index-bible-passion-The-Plot-To-Kill-Lord-Jesus.html">
                         <img src="img/The-Plot-To-Kill-Lord-Jesus.jpg" alt="The Plot To Kill Lord Jesus">
                     </a>
                     <div class="desc">The Plot To Kill Lord Jesus</div>
+                </div>
+                
+                <div class="galery" id="galery">
+                    <a href="bible-passion/index-bible-passion-Lord-Jesus-Anointed-At-Bethany.html">
+                        <img src="img/Lord-Jesus-Anointed-At-Bethany.jpg" alt="Lord Jesus Anointed At Bethany">
+                    </a>
+                    <div class="desc">Lord Jesus Anointed At Bethany</div>
                 </div>
                 
                 

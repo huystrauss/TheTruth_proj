@@ -335,6 +335,38 @@ section.bible-passion{
     display: none;
 }
 
+/* .box-bible-passion{
+    animation-name: bible-passion-animation;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+}
+
+.box-bible-passion-reverse{
+    animation-name: bible-passion-animation-reverse;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+} */
+
+@keyframes bible-passion-animation{
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes bible-passion-animation-reverse{
+    from{
+        opacity: 1;
+    }
+
+    to{
+        opacity: 0;
+    }
+}
+
 /* Galery Stories */
 div.galery{
     float: left;
@@ -344,7 +376,7 @@ div.galery{
     border-radius: 10px;
     background-color: var(--dark-cream-color);
     height: 350px;
-    transition: transform 2s 500ms;
+    /* transition: transform 2s 500ms; */
 }
 
 div.galery img{
