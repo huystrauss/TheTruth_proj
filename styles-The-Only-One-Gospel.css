@@ -379,6 +379,10 @@ div.galery{
     /* transition: transform 2s 500ms; */
 }
 
+div.galery.resurrection{
+    border: 5px solid var(--dark-blue-color);
+}
+
 div.galery img{
     width: 100%;
     height: 250px;
@@ -391,6 +395,11 @@ div.galery:hover{
     box-shadow: crimson 5px 5px 5px;
     /* transform: rotateY(360deg); */
     background-image: linear-gradient(to right, var(--gold-color), var(--blood-color), var(--passion-purple-color));
+}
+
+div.galery.resurrection:hover{
+    box-shadow: var(--blue-sky-color) 5px 5px 5px;
+    background-image: linear-gradient(to right, white, var(--blue-sky-color), var(--green-color));
 }
 
 div.galery a:hover{
