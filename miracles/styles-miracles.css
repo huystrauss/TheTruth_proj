@@ -205,6 +205,14 @@ main ul li img{
     margin: auto;
 }
 
+main > img{
+    width: 90%; 
+    margin: 5% auto; 
+    display: block; 
+    border-radius: 20px;
+    box-shadow: #8A0303 10px 10px 10px;
+}
+
 /* Form */
 section.form-input{
     padding: 20px;
